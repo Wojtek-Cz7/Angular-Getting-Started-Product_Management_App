@@ -4,12 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product-list.component';
 import {FormsModule} from '@angular/forms';
+import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { StarComponent } from './shared/star.component';
 
 @NgModule({
   // w delkaracjach definiujemy, jakie KOMPONENTY NALEŻĄ DO TEGO MODUŁU
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ConvertToSpacesPipe,
+    StarComponent
   ],
   // Tu deklarujemy jakie zewnętrzne moduły mają być dostępne dla wszystkich komponentów które należą do tego Angular Module
   imports: [
